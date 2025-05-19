@@ -7,7 +7,7 @@ const app = express();
 
 // ✅ CORS Middleware
 app.use(cors({
-    origin: 'http://localhost:8080', // frontend URL
+    origin: ['http://localhost:8080', 'https://user-auth-frontend-xm67.onrender.com'],// frontend URL
     credentials: true,               // allow cookies, authorization headers
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
